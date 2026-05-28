@@ -7,5 +7,13 @@ pipeline{
                 welcome('Manash')
             }
         }
+        stage('Calculation'){
+            steps{
+                script{
+                    calculator.add(20,50)
+                    calculator.multiplication(25,25)
+                }
+            }
+        }
     }
 }
